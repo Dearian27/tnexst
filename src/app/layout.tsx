@@ -16,7 +16,15 @@ export default function RootLayout({
         <meta name="referrer" content="origin" />
       </Head>
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <header style={{backgroundColor: 'greenyellow', padding: 20}}>
+            <p>header</p>
+          </header>
+          {children}
+          <footer style={{backgroundColor: 'greenyellow', padding: 20}}>
+            <p>footer</p>
+          </footer>
+        </body>
       </html>
     </>
   )
